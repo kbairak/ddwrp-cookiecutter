@@ -1,0 +1,26 @@
+version: '3'
+services:
+  django:
+    build:
+      context: .
+      dockerfile: django/Dockerfile
+    ports:
+     - "5000:5000"
+    volumes:
+      - ./django:/django
+      - ./webpack:/webpack
+    depends_on:
+      - db
+  webpack:
+    build:
+      context: .
+      dockerfile: webpack/Dockerfile
+    volumes:
+      - ./webpack:/webpack
+      - /webpack/node_modules
+  db:
+    build:
+      context: .
+      dockerfile: db/Dockerfile
+    volumes:
+      - ./db/data:/data

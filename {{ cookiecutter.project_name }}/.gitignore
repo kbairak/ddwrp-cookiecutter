@@ -1,0 +1,6 @@
+db/data/
+.eslintrc.yml
+__pycache__/
+webpack/dist/
+webpack/node_modules/
+tags

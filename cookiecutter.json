@@ -1,0 +1,5 @@
+{
+  "project_name": "ddwrp_project",
+  "first_django_app_name": "ddwrp_app",
+  "secret_key": "__SECRET__"
+}
