@@ -79,7 +79,7 @@ and 3 docker volumes:
 
 ## TODOs
 
-- Include source maps with webpack
-- Hot loading for react components
-- Add a bit of testing (both django and javascript)
-- Add some CI
+- [x] Include source maps with webpack
+- [ ] Hot loading for react components
+- [ ] Add a bit of testing (both django and javascript)
+- [ ] Add some CI
