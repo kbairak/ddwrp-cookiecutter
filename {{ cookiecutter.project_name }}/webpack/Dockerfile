@@ -1,4 +1,4 @@
-FROM node:10.12-jessie
+FROM node:10.13-alpine
 COPY webpack /webpack
 WORKDIR /webpack
 RUN npm install
